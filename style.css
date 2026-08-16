@@ -438,10 +438,12 @@ opacity: 0.7;
 .lastdiv div h3 {
   font-weight: 400;
   font-size: 14px;
+  color:white;
 }
 .lastdiv div p {
   font-size: 13px;
   font-weight: 400;
+  color:white;
 }
 .persional {
   height: 100px;
