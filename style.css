@@ -290,7 +290,7 @@ opacity: 0.7;
   position: absolute;
   height: 192px;
   width: 360px;
-  transform: translateY(-50px);
+  transform: translateY(-46px);
   margin-left: -23px;
   margin-top:6px;
 }
@@ -622,11 +622,11 @@ border-radius: 50%;
     width: 89%;
     left: 3%;
     border-radius: 3px; */
-      top: 20%;
+      top: 22%;
     right: 0;
     height: 55%;
-    width: 91%;
-    left: 7%;
+    width: 89%;
+    left: 8%;
     border-radius: 3px;
     position: absolute;
   }
