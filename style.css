@@ -444,12 +444,14 @@ opacity: 0.7;
   font-size: 14px;
   color: white;
   z-index:10;
+  filter:invert(0.8);
 }
 .lastdiv div p {
   font-size: 13px;
   font-weight: 400;
   color: white;
   z-index:10;
+  filter:invert(0.8);
 }
 h3{
   color:white;
