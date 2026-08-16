@@ -347,6 +347,7 @@ opacity: 0.7;
   flex-direction: column;
   font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
   gap: 23px;
+  color:white;
 }
 .lastnav span {
   font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
@@ -361,6 +362,7 @@ opacity: 0.7;
   display: flex;
   justify-content: center;
   gap: 4px;
+  color:white;
 }
 .lastnav div input {
   height: 20px;
@@ -434,6 +436,7 @@ opacity: 0.7;
   height: 40vh;
   width: 100%;
   border: 2px solid none;
+  color:white;
 }
 .lastdiv div {
   height: 60%;
@@ -444,13 +447,14 @@ opacity: 0.7;
   justify-content: center;
   flex-direction: column;
   gap: 28px;
+  color:white;
 }
-.lastdiv div h3 {
+.lastdiv div>h3 {
   font-weight: 400;
   font-size: 14px;
   color: white;
 }
-.lastdiv div p {
+.lastdiv div>p {
   font-size: 13px;
   font-weight: 400;
   color: white;
