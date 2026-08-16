@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: auto;
+}
+
+/* Main background */
+.bking {
+  position: relative;
+  min-height: 80vh;
+
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+    url("bkimg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navigation */
+.nav {
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+  padding: 25px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Netflix text */
+.logo {
+  position: relative;
+  z-index: 20;
+
+  color: #e50914;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+/* Sign in button */
+.signin {
+  position: relative;
+  z-index: 20;
+
+  background: #e50914;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 10px 20px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* Button hover */
+.signin:hover {
+  background: #b20710;
+}
+.navcontainer {
+  height: 110vh;
+  width: 69%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 41px;
+}
+/* .navcontainer li::before{
+    content: "Try 30 days for RS.0";
+    color: white;
+    background-color: red;
+    height: 35px;
+    width: 15%;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70%;
+    right:43%
+} */
+.gmail {
+  display: flex;
+  height: 55px;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid none;
+  gap: 4px;
+  margin-top: 0%;
+}
+.placeholder {
+  height: px;
+  width: 25%;
+  color: rgb(171, 168, 168);
+  padding: 0 0 0 10px;
+}
+.getstarted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 40px;
+  width: 15%;
+  background-color: rgb(215, 26, 26);
+  border-radius: 3px;
+}
+.getstarted:hover {
+  /* background-color: red; */
+  background: conic-gradient(green, red, blue, yellow);
+  opacity: 0.5;
+}
+/* .navcontainer h5::before {
+  background-color: rgb(235, 13, 13);
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  content: "Try 30 days for RS.0";
+  display: block;
+  gap: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0 20px;
+  font-weight: 800;
+  font-size: 14px;
+  margin-top: -9vh;
+  position: relative;
+  margin-left: -9%;
+  color: white;
+  margin-bottom: 75%;
+} */
+.navcontainer input {
+  height: 40px;
+  width: 25%;
+  color: rgb(231, 227, 227);
+  padding: 0 0 0 10px;
+  background-color: rgba(23, 23, 23, 0.5);
+  border: none;
+  font-size: 16px;
+}
+.navcontainer h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 20%;
+}
+.navcontainer span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navcontainer li {
+  font-size: 15px;
+  font-weight: 400;
+  /* margin-top: 10%; */
+}
+.line {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(79, 76, 76);
+}
+.rs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 15%;
+  position: relative;
+  gap: 25px;
+}
+.rs h2 {
+  background-color: red;
+  padding: 8px 23px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.re h5 {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.container {
+  height: 300px;
+  width: 99%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: black;
+}
+.box {
+  /* border: 2px solid; */
+  height: 100%;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color:; */
+}
+.b1 {
+  gap: 30px;
+  background-color: black;
+}
+.container span {
+  width: 100%;
+  font-size: 30px;
+  margin-top: -35px;
+  position: relative;
+  font-weight: 800;
+  font-family: "Baloo 2", sans-serif;
+  animation: updown 8s linear infinite alternate;
+}
+.container p {
+  font-size: 20px;
+  width: 70%;
+  animation: updown 8s linear infinite alternate;
+}
+@keyframes updown {
+  /* from {transform: translateX(10px);} */
+  to {
+    transform: translateY(5px);
+  }
+}
+/* .b2{
+  background-image: url(new\ computer.jpg);
+  background-color: transparent;
+  opacity: 0.5;
+  background-repeat: repeat-x no-repeat;
+  object-fit: cover;
+  position: relative;
+ 
+}
+.box img{
+object-fit: cover;
+height: 100%;
+width: 100%;
+opacity: 0.7;
+} */
+.b2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  /* z-index: 10px; */
+  background-color: black;
+}
+.b2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* background-color: black; */
+}
+.b2 video {
+  /* position: absolute;
+  height: 77%;
+  width: 330px;
+  top: 107.2%;
+  right: 205px;
+  border-radius: 3px; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  height: 185px;
+  width: 330px;
+  transform: translateY(-40px);
+  margin-left: -20px;
+
+}
+.Questions {
+  background-color: black;
+  height: 450px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Questions h1 {
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+  left: 15%;
+}
+.bx {
+  background-color: rgb(65, 65, 65);
+  height: 55px;
+  width: 70%;
+  font-size: 24px;
+  padding: 23px 23px 23px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.bx:hover {
+  background-color: rgb(90, 87, 87);
+}
+.lastnav {
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+  gap: 23px;
+}
+.lastnav span {
+  font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.lastnav div {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.lastnav div input {
+  height: 20px;
+  width: 20%;
+  padding: 18px 12px 18px 12px;
+  font-weight: 400;
+  border-radius: 3px;
+  background-color: rgba(23, 23, 23, 0.7);
+  color: rgb(192, 196, 200);
+}
+.lastnav div input:hover {
+  background-color: rgb(72, 72, 72);
+}
+.lastnav div button {
+  height: 22px;
+  width: 12%;
+  padding: 18px 12px 18px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer {
+  background-color: black;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.a {
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+  justify-content:;
+  flex-direction: row;
+  position: relative;
+  padding: 0 -12px 0 -12px;
+  margin-left: 13%;
+  background-color: black;
+}
+.div {
+  height: 25px;
+  width: 100%;
+  background-color: black;
+}
+.b {
+  margin-left: 0%;
+  position: absolute;
+  background-color: black;
+  padding: 0 0 0 8px;
+}
+.footerboxes {
+  height: 100%;
+  width: 20%;
+  /* border: 2px solid rgb(126, 125, 125); */
+  background-color: #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 23px;
+  flex-direction: column;
+  padding: 0 0 0 34px;
+}
+.lastdiv {
+  background-color: black;
+  height: 40vh;
+  width: 100%;
+  border: 2px solid none;
+}
+.lastdiv div {
+  height: 60%;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+}
+.lastdiv div h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.lastdiv div p {
+  font-size: 13px;
+  font-weight: 400;
+}
+.persional {
+  height: 100px;
+  width: 80%;
+  padding: 0 0 0 30px;
+  margin: auto;
+}
+.persional h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+}
+.social {
+  height: 200px;
+  gap: 5%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  /* margin: auto; */
+  /* background-color: red; */
+}
+.social a {
+  /* border-radius: 50%; */
+}
+.social img {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  border-radius: 50%;
+}
+.aa {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  animation: updownn 5s linear infinite alternate;
+}
+/* .body{
+  background-color: black;
+} */
+.a1{
+box-shadow:  0 0 12px 12px rgb(255, 5, 5);
+border-radius: 50%;
+}
+.a2{
+box-shadow:  0 0 12px 12px rgb(10, 255, 231);
+border-radius: 50%;
+}
+.a3{
+box-shadow:  0 0 12px 12px rgb(255, 64, 239);
+border-radius: 50%;
+}
+.a4{
+box-shadow:  0 0 12px 12px rgb(29, 255, 36);
+border-radius: 50%;
+}
+@keyframes updownn {
+  from {
+    transform: translateY(15px);
+  }
+}
+@media (max-width: 724px) {
+  body {
+    background-color: black;
+  }
+  .navcontainer h1 {
+    color: white;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .navcontainer span {
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .navcontainer p {
+    color: white;
+    font-size: 10px;
+    font-weight: 150px;
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .bking {
+    width: 100%;
+  }
+  .gmail {
+    flex-direction: column;
+    height: 100px;
+    gap: 9px;
+  }
+  .gmail input {
+    width: 220px;
+    height: 50px;
+    color: white;
+    filter: invert(0.3);
+    padding: 0 0 0 12px;
+    border-radius: 4px;
+  }
+  .gmail button {
+    width: 150px;
+    border-radius: 2px;
+  }
+  .rs {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+  }
+  .rs h2 {
+    height: 40px;
+    width: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rs h5 {
+    color: white;
+  }
+  .bking {
+    height: 50vh;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 90vh;
+    width: 400px;
+  }
+  .b1 {
+    border: 2px soid white;
+    height: 350px;
+    width: 400px;
+    position: relative;
+    margin: auto;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 40px;
+    padding: 0 0 0 30px;
+    gap: 37px;
+  }
+  .b1 span {
+    color: white;
+    font-size: px;
+    font-weight: 900;
+    height: 50px;
+    width: 95%;
+    animation: b1 10s linear infinite alternate;
+  }
+  .b1 p {
+    color: white;
+    font-size: 18px;
+    height: 100px;
+    width: 95%;
+    animation: b1 10s linear infinite alternate;
+  }
+  .b2 {
+    border: 2px soid white;
+    height: 350px;
+    width: 400px;
+    position: relative;
+  }
+  .b2 img {
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .b2 video {
+    top: -13%;
+    right: 0;
+    height: 100%;
+    width: 89%;
+    left: 3%;
+    border-radius: 3px;
+  }
+  .Questions {
+    height: 70vh;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Questions h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    margin-left: -10%;
+  }
+  .bx {
+    width: 300px;
+    font-size: 16px;
+    color: white;
+  }
+  .lastnav {
+    height: 150px;
+    width: 100%;
+    padding: 0 20px 0 40px;
+  }
+  .lastnav span {
+    color: white;
+  }
+  .lastnav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+    gap: 12px;
+  }
+  .lastnav div input {
+    width: 70%;
+  }
+  .lastnav div button {
+    width: 50%;
+  }
+  .div {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+    left: -8%;
+  }
+  .div a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .footer {
+    height: auto;
+    width: 100%;
+    gap: 25px;
+  }
+  .footerboxes {
+    height: 100%;
+    /* width: 30%; */
+    width: auto;
+    color: white;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 0 12px 0 20px;
+  }
+  .footerboxes a {
+    color: white;
+    text-decoration:;
+    font-size: 12px;
+  }
+  .lastdiv select {
+    color: black;
+    font-weight: 400;
+  }
+  .lastdiv h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .lastdiv p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .lastdiv div {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 10px 0 20px;
+  }
+.persional h1{
+  color: white;
+  font-size: 23px;
+  height: 50px;
+  width: 100%;
+  font-weight: 900;
+  position: absolute;
+}
+/* .persional{
+  height: 70px;
+  width: 80%;
+  margin: auto; */
+/* } */
+/* .social{
+  height: 100px;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+} */
+ .persional{
+  margin-bottom: 150px;
+  background-color: transparent;
+  position: absolute;
+  transform: translateY(-150px);
+ }
+ .social img{
+  height: 60px;
+  width: 60px;
+ }
+ .social{
+  gap: 34px;
+  margin-bottom: 5%;
+ }
+ .aa{
+  margin-bottom: 5%;
+ }
+
+
+}
+@keyframes b1 {
+  from {
+    transform: translateY(8px);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
