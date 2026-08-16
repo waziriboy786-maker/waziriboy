@@ -12,7 +12,6 @@ body {
 }
 
 /* Main background */
-/* @media (max-width: 1298px){  */
 .bking {
   position: relative;
   min-height: 80vh;
@@ -286,7 +285,7 @@ opacity: 0.7;
   position: absolute;
   height: 192px;
   width: 342px;
-  transform: translateY(-45px);
+  transform: translateY(-50px);
   margin-left: -20px;
 
 }
@@ -501,7 +500,6 @@ border-radius: 50%;
   }
   
 }
-  /* } */
 @media (max-width: 724px) {
   body {
     background-color: black;
