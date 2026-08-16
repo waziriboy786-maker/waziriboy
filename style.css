@@ -439,21 +439,25 @@ opacity: 0.7;
   gap: 28px;
   color:white;
 }
-.lastdiv h3 {
+.lastdiv div h3 {
   font-weight: 400;
   font-size: 14px;
   color: white;
+  z-index:10;
 }
-.lastdiv p {
+.lastdiv div p {
   font-size: 13px;
   font-weight: 400;
   color: white;
+  z-index:10;
 }
 h3{
   color:white;
+  z-index:1;
 }
 p{
   color:white;
+  z-index:1;
 }
 .persional {
   height: 100px;
