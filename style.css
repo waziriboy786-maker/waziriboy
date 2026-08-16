@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: Arial, sans-serif;
   height: auto;
+  background-color:black;
 }
 
 /* Main background */
@@ -284,9 +285,9 @@ opacity: 0.7;
   object-fit: cover;
   position: absolute;
   height: 192px;
-  width: 342px;
+  width: 352px;
   transform: translateY(-50px);
-  margin-left: -20px;
+  margin-left: -22px;
 
 }
 .Questions {
