@@ -12,6 +12,7 @@ body {
 }
 
 /* Main background */
+@media (max-width: 1238px){ 
 .bking {
   position: relative;
   min-height: 80vh;
@@ -498,7 +499,9 @@ border-radius: 50%;
   from {
     transform: translateY(15px);
   }
+  
 }
+  }
 @media (max-width: 724px) {
   body {
     background-color: black;
