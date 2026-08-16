@@ -11,6 +11,12 @@
   height: auto;
   background-color:black;
 }
+.lastdiv div h3{
+  color:white;
+}
+.lastdiv div p{
+  color:white;
+}
 
 /* Main background */
 .bking {
