@@ -11,11 +11,13 @@
   height: auto;
   background-color:black;
 }
-.lastdiv div h3{
+.lastdiv div h3 {
   color:white;
+  background-color:black;
 }
-.lastdiv div p{
+.lastdiv div p {
   color:white;
+  background-color:black;
 }
 
 /* Main background */
