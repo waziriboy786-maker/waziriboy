@@ -10,18 +10,8 @@
   font-family: Arial, sans-serif;
   height: auto;
   background-color:black;
+  color:white;
 }
-.lastdiv div h3 {
-  font-weight: 400;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-}
-.lastdiv div p {
-  font-size: 13px;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-}
-
 /* Main background */
 .bking {
   position: relative;
@@ -449,15 +439,21 @@ opacity: 0.7;
   gap: 28px;
   color:white;
 }
-.lastdiv div>h3 {
+.lastdiv h3 {
   font-weight: 400;
   font-size: 14px;
   color: white;
 }
-.lastdiv div>p {
+.lastdiv p {
   font-size: 13px;
   font-weight: 400;
   color: white;
+}
+h3{
+  color:white;
+}
+p{
+  color:white;
 }
 .persional {
   height: 100px;
