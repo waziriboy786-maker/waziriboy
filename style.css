@@ -12,7 +12,7 @@ body {
 }
 
 /* Main background */
-@media (max-width: 1238px){ 
+@media (max-width: 1298px){ 
 .bking {
   position: relative;
   min-height: 80vh;
